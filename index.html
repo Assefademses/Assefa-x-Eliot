@@ -9,67 +9,72 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-      <h1 id="title"> My Survey </h1>
+        <h1 id="title"> My Survey </h1>
 
-          <p id="description"> Wat are your favourite juices </p>
-              
-              <form id="survey-form">
-  <fieldset>
+      <p id="description"> What are your favorite juices? </p>
+          
+          <form id="survey-form">
+
+<fieldset>
     <legend>Fruit juice size</legend>
     <p>
-      <input type="input" name="name" id="name-lablel" value="name"placeholder="Enter your name here"required="true"/>
-      <label for="size_3">Number</label>
+      <label for="name">Name:</label>
+      <input type="input" name="name" id="name" value="" placeholder="Enter your name here" required="true"/>
     </p>
     <p>
-      <input type="radio" name="attribute" id="size_1" value="small" />
+      <input type="radio" name="size" id="size_1" value="small" />
       <label for="size_1">Small</label>
     </p>
     <p>
-      <input type="radio" name="attribute" id="size_2" value="medium" />
+      <input type="radio" name="size" id="size_2" value="medium" />
       <label for="size_2">Medium</label>
     </p>
     <p>
-      <input type="radio" name="attribute" id="size_3" value="large" />
+      <input type="radio" name="size" id="size_3" value="large" />
       <label for="size_3">Large</label>
     </p>
     <p>
-      <input type="email" name="email" id="email-label" value="large" placeholder="Enter your email here"/>
-      <label for="size_3">Email</label>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" value="" placeholder="Enter your email here"/>
     </p>
     <p>
-      <input type="number" name="size" id="number-label" value="number" placeholder="  Enter your number here" />
-      <label for="size_3">Number</label>
+      <label for="number">Number:</label>
+      <input type="number" name="number" id="number" value="" placeholder="Enter your number here" min="1" max="10"/>
     </p>
+<div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label><input name="prefer" value="service" type="checkbox" class="input-checkbox"> Service</label>
+      <label>
+        <input name="prefer" value="friendliness" type="checkbox" class="input-checkbox"> Friendliness</label>
+      <label><input name="prefer" value="infrastructure" type="checkbox" class="input-checkbox"> Infrastructure</label>
+      <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox"> Challenges</label>
+      <label><input name="prefer" value="temperature" type="checkbox" class="input-checkbox"> Temperature</label>
+    </div>
+
+<label for="dropdown">Do you like ice?</label>
+<select id="dropdown" name="dropdown">
+    <option value="">--Please choose an option--</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+
+<label for="comment">Any comments or suggestions?</label>
+<textarea name="comment" id="comment" form="survey-form" placeholder="Enter text here..."></textarea>
 
 
-    <div class="form-group">
-          <p>
-            What would you like to see improved?
-            <span class="clue">(Check all that apply)</span>
-          </p>
-
-          <label><input name="prefer" value="service" type="checkbox" class="input-checkbox"> service </label>
-          <label>
-            <input name="prefer" value="friendliness" type="checkbox" class="input-checkbox"> friendliness </label>
-          <label><input name="prefer" value="infrastructure" type="checkbox" class="input-checkbox"> infrastructure </label>
-          <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
-          <label><input name="prefer" value="temperature" type="checkbox" class="input-checkbox"> temperature</label>
-        </div>
-
-    <label for="dropdown">Do you like ice?</label>
-    <select id="dropdown" name="dropdown" size="2" multiple>
-
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-
-    </select>
-  </fieldset>
-  <textarea name="comment" form="usrform">Enter text here...</textarea>
-
-  <input #submit type="submit" value="Submit">
-
+<input type="submit" id="submit" value="Submit">
 </form>
 
+<h1> hello world we are software developers. </h1>
+<script  src="js/index.js"></script>
+
+
+ </body>
+</html>
       
 
     <h1> hello world we are software developers. </h1>
