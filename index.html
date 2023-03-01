@@ -11,13 +11,13 @@
 
       <h1 id="title"> My Survey </h1>
 
-          <p id="description"> </p>
+          <p id="description"> Wat are your favourite juices </p>
               
-              <form>
+              <form id="survey-form">
   <fieldset>
     <legend>Fruit juice size</legend>
     <p>
-      <input type="input" name="name" id="name-lablel" value="name"placeholder="Enter your name here"/>
+      <input type="input" name="name" id="name-lablel" value="name"placeholder="Enter your name here"required="true"/>
       <label for="size_3">Number</label>
     </p>
     <p>
@@ -40,6 +40,22 @@
       <input type="number" name="size" id="number-label" value="number" placeholder="  Enter your number here" />
       <label for="size_3">Number</label>
     </p>
+
+
+    <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" value="service" type="checkbox" class="input-checkbox"> service </label>
+          <label>
+            <input name="prefer" value="friendliness" type="checkbox" class="input-checkbox"> friendliness </label>
+          <label><input name="prefer" value="infrastructure" type="checkbox" class="input-checkbox"> infrastructure </label>
+          <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+          <label><input name="prefer" value="temperature" type="checkbox" class="input-checkbox"> temperature</label>
+        </div>
+
     <label for="dropdown">Do you like ice?</label>
     <select id="dropdown" name="dropdown" size="2" multiple>
 
